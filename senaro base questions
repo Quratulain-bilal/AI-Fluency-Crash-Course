@@ -1,0 +1,69 @@
+Q1. Maryam runs operations at a courier company. She does three things. (1) Every Monday she uploads 200 scanned invoices and asks an AI system to return the invoice number, date and total for each one. (2) Each evening she debates route-planning options with an AI system over many turns. She challenges its suggestions, it revises them, and the plan that emerges belongs to neither of them alone. (3) Last month she set up an AI system that scans the shipment logs every night, decides which delays are serious enough to matter, and messages the affected customers directly. She is asleep when it runs. Which statement is most accurate?
+
+A. Activity 3 carries the same kind of failure risk as activity 1, because in both she specifies exactly what must happen and only the volume differs.
+B. Activity 2 is the riskiest, because open-ended dialogue gives the AI the most freedom to decide what happens next.
+C. Activity 3 differs in kind: the AI chooses many next steps for people other than Maryam, at a time she is not present. The constraints and judgment therefore have to be built in beforehand, and its typical failure is misreading the goal or the limits, not botching a single step.
+D. Activity 1 is the riskiest, since extraction from scans is the only activity where the output is used without any back-and-forth with a human.
+
+Q2. A founder tells an AI coding assistant, "Build me something that handles our supplier payments." Within an hour there is a working prototype, and the demo runs flawlessly. Two weeks later the CFO refuses to approve it. Nobody can say how much it may send unaided, who signs off on disputed invoices, whether it only prepares payments or actually releases them, or which ledgers it may read. The team's post-mortem concludes that the original request was "under-specified in wording." What is the most accurate diagnosis?
+
+A. The failure happened before wording mattered: authority, limits, escalation and what stays with humans are organizational decisions that were never made. They must be settled deliberately before anything is built and not handed to the tool implicitly.
+B. The wording diagnosis is correct: adding output format, tone and length requirements would have led the assistant to produce a design the CFO could accept.
+C. More demo scenarios would have exposed these gaps automatically, so the real failure is insufficient testing before approval.
+D. A more capable model would have inferred sensible limits from the nature of payments, so the failure lies in model selection.
+
+Q3. A retailer's support assistant keeps telling customers that refunds are honored for 30 days, although the current rule is 14. The team has rewritten the assistant's standing instructions six times, improving tone, structure and worked examples each time. An audit then reveals two facts. The policy document the assistant retrieves is two years old, and the order-lookup function it calls reports only "delivered" and never "returned". Which conclusion is best supported?
+
+A. Every reply should be reviewed by a human before sending. That is sufficient, and the data sources can stay as they are.
+B. Add one line to the standing instructions saying "always apply the current policy", and the assistant will locate the right rule itself.
+C. The variation is due to randomness in the model, so run each question five times and take the majority answer.
+D. Wording cannot compensate for stale, incomplete or missing inputs. The fix lies in the trusted source the assistant reads, the coverage of its tools and the overall design of what it is given, not in a seventh rewrite of the instructions.
+
+Q4. An analyst pastes three vendor contracts into a single request: "Pull out the key terms, compare the vendors, score them and write a recommendation." The final text states that Vendor B allows penalty-free exit at six months. It reads plausibly and she forwards it. Later she discovers the real figure is twelve months, and the comparison, the scores and the recommendation all rested on that error. Which corrective approach is strongest?
+
+A. Lengthen the request with stricter language demanding accuracy, so that one pass gets everything right.
+B. Split the work into ordered stages. Extract the terms into a table first, since an error there spreads furthest. Spot-check that table against the contracts, then run the later stages using only the table. Also allow the model to say "not stated" and require a section reference for each term.
+C. Ask a second AI system to review the final recommendation, and forward it if the second system agrees.
+D. Switch to a newer model, since newer models do not invent contract facts and the workflow can stay unchanged.
+
+Q5. A university deploys an AI tutor for first-year programming. Staff sample its answers and every answer is factually correct. Even so, the pass rate does not improve by the end of the semester. The logs show a pattern: as soon as a student writes "I'm stuck", the tutor supplies the complete solution. Its standing instructions contained no rule about how it should behave when a student is struggling. Which analysis is most accurate?
+
+A. The answers must be verified more strictly, or the pass rate will not improve.
+B. A search-enabled assistant should have been chosen instead of a coding assistant.
+C. Students should have been told that the tutor is an AI, and they would then have tried harder on their own.
+D. A rule governing the tutor's standing behavior was missing (for example, no full answer before the student has attempted the problem). The shortfall was visible only by looking at outcomes across many interactions, not by checking single replies, so ongoing sampling is needed and the rule must be permanent.
+
+Q6. An AI recommends Vendor A over two others. The analyst asks it to list its assumptions, evidence and criteria. One listed assumption is "Vendor A natively supports single sign-on", which appears nowhere in the supplied documents. The analyst says: "The conclusion sounds sensible, and the AI has now shown me its actual reasoning, so I can trust it." Which response is most sound?
+
+A. The list is a justification offered for inspection, not a faithful record of what happened inside the model. A sensible-looking conclusion resting on an unsupported premise will not hold, so verify the single sign-on claim against a source and withhold trust until it is supported.
+B. Because the conclusion is sensible, the list is a formality and the recommendation can be used.
+C. Stop requesting assumptions from the AI, because asking for them increases misplaced trust.
+D. Listed assumptions are the model's genuine internal reasoning, so an assumption that looks plausible can be accepted without checking.
+
+Q7. Farah is producing a client report with an AI system. Each time she asks for a formatting fix, the system reverts to an earlier error. She has now corrected the same error three times. The session has taken 40 minutes, while writing the report herself would have taken about 30. She thinks: "I've come this far. A little more steering and it will hold." What is the soundest reading and next step?
+
+A. Focus on the quality of the final output and check it more strictly.
+B. Tell the client that AI was used, then continue the session as before.
+C. The session itself is not paying off, given the repeated uncorrected error and the net loss of time. Escalate in order: change the standing behavioral instructions first, then change the tool, and if neither works, take the task back. Taking it back is a legitimate move, not a defeat.
+D. Continue, since the effort already spent will be wasted otherwise and the fourth correction may finally hold.
+
+Q8. A teacher wants AI help drafting feedback for her students. She deletes names and roll numbers but writes: "the only student in Section B who missed the week-3 lab and has the highest marks…". She pastes this into a free consumer AI service that her school has not approved. A colleague says, "You removed the names, so you have done your duty." Which assessment is most accurate?
+
+A. Correct: the purpose of stripping is to remove names, so once they are gone the data-handling duty is fulfilled.
+B. The remaining details in combination still point to one student, so the stripping was insufficient. The test is whether someone reading only the pasted text could tell who it concerns. Separately, stripping does not answer the question of whether this tool may receive the data at all, so an approved tool is still required. Removing too much would also fail, since the task needs the underlying pattern.
+C. The only problem is over-removal. Removing more detail would make the unapproved tool acceptable.
+D. The only problem is that the students were not told. Telling them would make it acceptable to use any tool.
+
+Q9. A finance assistant produces a month-end summary: "Total refunds: Rs 12,48,900. I verified this against the bank statement and removed duplicate entries." It also shows step-by-step arithmetic written out in text that looks correct. No code execution, spreadsheet or tool log is visible. The manager is about to send the summary to the board. Which action is most appropriate?
+
+A. Both statements are only claims, not demonstrated events. The total should be computed by a spreadsheet or code whose execution is shown, and the verification claim needs evidence such as a tool log or a statement match. Then check the inputs (right rows, right filters, the duplicate rule) instead of only the sum, and then send.
+B. Ask the assistant to regenerate the summary, and treat the total as correct if the same figure appears again.
+C. Ask the assistant for a confidence level, and send if it says above 95%.
+D. The written arithmetic reads correctly and the assistant says it verified the figures, so the summary is ready to send.
+
+Q10. A team builds a customer-facing AI worker. The demo is excellent, so they skip building repeatable tests. Three months into production they find that the worker takes a wrong action in about 8% of cases, and these still show as "success" on the dashboard. There is no log of its actions, and customers were never told they were talking to an AI. The department head says, "The scoping and the instructions were fine." Which mapping and fix are most accurate?
+
+A. Only the scoping failed. Shrink the scope and nothing else is needed.
+B. Only the instructions failed. Add more rules to them, since repeatable tests and disclosure are redundant in production.
+C. Two gaps exist. First, no systematic checking: build repeatable tests, ongoing monitoring and sampling, including of cases that look successful, because a system can fail silently and still look safe. Second, no accountability structure: add disclosure, action logs and human review points. Then go round the loop again, and treat responsibility as running through the whole workflow, not a last checkbox.
+D. Only paperwork is missing. Add logs and disclosure, since output checking matters only in a chat window.
