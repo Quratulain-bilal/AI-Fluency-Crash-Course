@@ -149,7 +149,7 @@ Agency mein AI ko khud decide karna parta hai: routine kya hai, important kya ha
 
 Framework ke mutabiq agency = insaan AI ko **configure** karta hai taake wo **future** tasks independently kare, aur **doosron ke liye** bhi.
 
-- **Future:** Aap somwar ko setup karte hain, AI jumeraat ka kaam aapki ghair-maujoodgi mein karta hai.
+- **Future:** Aap wednesday ko setup karte hain, AI thursday ka kaam aapki ghair-maujoodgi mein karta hai.
 - **For others:** Jis se AI baat karta hai wo aap nahi, aapka customer/student/colleague ho sakta hai.
 
 Is ka matlab: automation aur augmentation mein aap "chair mein" baithe hain. Agency mein aap chair se uth jaate hain, isliye **judgment pehle se system mein bana kar dena parta hai.**
@@ -177,7 +177,7 @@ Mode 2 (Manufacturing)    -> agency ko systematic banana
 
 ## 3. D1: Delegation = DECIDE
 
-### Easy samajh
+### Easy 
 
 Sab se common beginner mistake pehle prompt se **pehle** hoti hai: log sochay bagair type karna shuru kar dete hain. Delegation ka matlab sirf "kaam AI ko dena" nahi. Ye **workflow design** hai: kaam insaan aur AI mein kaise divide ho.
 
@@ -235,7 +235,7 @@ Sawal badal jata hai: "Kya AI ye kar sakta hai?" se **"Kaunsa hissa AI kare, kau
 
 ## 4. D2: Description = EXPLAIN
 
-### Easy samajh
+### Easy 
 
 AI naye colleague ki tarah hai jise aapke context ka kuch pata nahi. Agar aap important cheez chhor dein to wo **guess** karega, aur reasonable guess bhi galat ho sakta hai. Description = AI ko wo info aur guidance dena jo kaam ke liye chahiye. Ye "achha prompt likhne" se **bara** concept hai.
 
@@ -303,7 +303,7 @@ AI ko jo kuch "dikhta" hai (context):
  |-- Aap ka prompt   -> product description, ab kya chahiye
 ```
 
-**Sabaq:** ek khoobsurat prompt us agent ko nahi bacha sakta jiske paas ghalat data, missing rules, kharab examples ya zaroori tool tak access na ho.
+**point:** ek khoobsurat prompt us agent ko nahi bacha sakta jiske paas ghalat data, missing rules, kharab examples ya zaroori tool tak access na ho.
 
 Ek tip: agar prompt likhna nahi aa raha to apni situation normal zaban mein bata do aur AI se kaho ise clear instruction bana de.
 
@@ -313,7 +313,7 @@ Ek tip: agar prompt likhna nahi aa raha to apni situation normal zaban mein bata
 
 ## 5. D3: Discernment = CHECK
 
-### Easy samajh
+### Easy 
 
 Description poochti hai: *"Maine kaam theek se samjhaya?"*
 Discernment poochti hai: *"AI ne kaam theek kiya?"*
@@ -378,7 +378,7 @@ Jab kaam na kar raha ho, 3 escalation moves: **(1)** performance description bad
 
 Ye tab aata hai jab aap agency use karte hain. Sawal ek jawab ka nahi, balki ye hai: AI ka independent behavior logon ke liye achha nateeja deta hai ya nahi?
 
-Misal: ek AI tutor har sawal ka sahi jawab deta hai, lekin jaise hi student hichkichaye seedha solution de deta hai, to student kuch seekhta nahi. Ye chat window ke andar se nahi dikhta, sirf **bohat se cases** mein dikhta hai (users agla kya karte hain, kis baat ki complaint karte hain, kaun se cases har baar ek tarah se fail hote hain). Hazaar conversations haath se parhna mumkin nahi, isliye ye **infrastructure** ban jata hai.
+example: ek AI tutor har sawal ka sahi jawab deta hai, lekin jaise hi student hichkichaye seedha solution de deta hai, to student kuch seekhta nahi. Ye chat window ke andar se nahi dikhta, sirf **bohat se cases** mein dikhta hai (users agla kya karte hain, kis baat ki complaint karte hain, kaun se cases har baar ek tarah se fail hote hain). Hazaar conversations haath se parhna mumkin nahi, isliye ye **infrastructure** ban jata hai.
 
 ### Description <-> Discernment Loop
 
@@ -421,7 +421,7 @@ Aap wo judgment automate nahi kar sakte jo aapne khud kabhi karna nahi seekha. I
 
 ## 6. D4: Diligence = OWN
 
-### Easy samajh
+### Easy 
 
 Pehle 3 Ds behtar **result** dilate hain. Diligence poochti hai: *"Kya mujhe AI is tarah use karna bhi chahiye?"*
 
